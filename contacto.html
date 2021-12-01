@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="A traves de esta seccion es posible contactarme para cualquier trabajo o sugerencia">
+    <meta name="keywords" content="CONTACTO, FORMULARIO, TRABAJO, DISEÑO GRAFICO, SUGERENCIAS"> 
+    <meta name="author" content="Federico Ignacio Garcia">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <script src="js/wow.min.js"></script>
+    <script>
+    new WOW().init();
+    </script>
+    <title>Contacto</title>
+</head>
+<body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html">
+                    <img src="Imagenes/Logo.png" id="logo" height="60hv" alt="">
+                </a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav__texto--crema" aria-current="page" href="index.html">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav__texto--crema" href="perfil.html">Perfil</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav__texto--crema" href="servicios.html">Servicios</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav__texto--crema" href="clientes.html">Clientes</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav__texto--crema" href="contacto.html">Contacto</a>
+                  </li>
+                </ul>
+                <form class="d-flex">
+                  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                  <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+              </div>
+            </div>
+          </nav>
+    </header>
+    <main>
+        <h1>Formulario de contacto</h1>
+        <section id="formulario">
+            <article>
+                <form action="infousuario.txt" method="post" class="display center">
+                    <fieldset class="border p-3 border-3 rounded">
+                        <legend id="division">Informacion de usuario</legend>
+                        <label for="persona">Nombre y apellido</label>
+                        <input type="text" id="persona" class="w-100"> <br>
+                        <label for="telefono">Numero de telefono</label>
+                        <input type="tel" id="telefono" class="w-100"> <br>
+                        <label for="email">Email de contacto</label>
+                        <input type="email" id=email class="w-100"> <br> <br>
+                        <legend id="division">Contactanos</legend>
+                        <label for="servicio">Que servicio esta buscando?</label> <br>
+                        <select name="servicio" id="">
+                            <option value="">Seleccione una opcion</option>
+                            <option value="folletos">Folletos</option>
+                            <option value="editorial">Editorial</option>
+                            <option value="stand">Stands</option>
+                            <option value="diseño 3d">Diseño 3D</option>
+                            <option value="logo">Logos</option>
+                            <option value="otro">Otros</option>
+                        </select> <br>
+                        <label for="">Es su primera vez trabajando con nosotros?</label> <br>
+                        <label for="">Si</label>
+                        <input type="radio" value="si" name="multiplechoice">
+                        <label for="">No</label>
+                        <input type="radio" value="no" name="multiplechoice"> <br>
+                        <label for="">Para especificaciones o informacion adicional:</label> <br>
+                        <textarea name="" id="" cols="30" rows="10"></textarea> <br>
+                        <input type="reset" value="Cancelar" name="" id=""> 
+                        <input type="submit" value="Enviar" name="" id=""> <br>
+                        <a href="error.html">Error</a>
+                    </fieldset>
+                </form>
+            </article>
+        </section>
+    </main>
+    <footer>
+      <a href="contacto.html">
+        <img class="footer__iconos--derecha ms-1 me-1" src="Imagenes/Redes/email.png" alt="logoemail">
+      </a>
+      <a href="">
+        <img class="footer__iconos--derecha ms-1 me-1" src="Imagenes/Redes/linkedin.png" alt="logolinkedin">
+      </a>
+      <a href="https://www.whatsapp.com/?lang=es">
+        <img class="footer__iconos--derecha ms-1 me-1" src="Imagenes/Redes/whatsapp.png" alt="logowhatsapp">
+      </a>
+        <h4>+54 11- --- ----   federicoignaciogarcia@gmail.com</h4>         
+    </footer>  
+</body>
+</html>
