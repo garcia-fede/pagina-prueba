@@ -57,9 +57,7 @@ h3, h4 {
   background: radial-gradient(#272424, #3f3838); }
 
 .bg__tipoSeccion--3 {
-  background: radial-gradient(#494944, #746b6b);
-  opacity: 1;
-  box-shadow: 0 0 100px 5px grey; }
+  background: radial-gradient(#494944, #746b6b);}
 
 #op {
   opacity: 0; }
