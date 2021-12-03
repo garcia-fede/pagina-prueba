@@ -54,10 +54,14 @@ h3, h4 {
   background: radial-gradient(#131414, #272424); }
 
 .bg__tipoSeccion--2 {
-  background: radial-gradient(#272424, #3f3838); }
+  background: linear-gradient(to bottom,#272424, #3f3838); }
 
 .bg__tipoSeccion--3 {
   background: radial-gradient(#494944, #746b6b);}
+
+.txtCenter{
+  font-size: 4.25vmin ;
+}
 
 #op {
   opacity: 0; }
