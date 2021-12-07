@@ -1,0 +1,39 @@
+header{
+    width: 100%;
+    position: fixed;
+    height: 20hv;
+    z-index:2;
+    background: $fondoSecundario;
+    nav{
+        padding: 5px;
+        a{
+            img{
+                &:hover{
+                    transform: rotateY(360deg);
+                    transition: transform 2s;
+                    cursor: pointer;
+                }
+            }
+        }
+        ul{
+            li{
+                text-transform: uppercase;
+                margin:0 20px;
+                font-size: $textoChico;
+                a{
+                    text-decoration: none;
+                    background-image: linear-gradient(currentColor, currentColor);
+                    background-position: 0% 100%;
+                    background-repeat: no-repeat;
+                    background-size: 0% 2px;
+                    transition: 1s;
+                    &:hover, &:focus{
+                        background-size:100% 2px;
+                        color: red;
+                    }
+                }
+            }
+        }
+    }
+
+}
