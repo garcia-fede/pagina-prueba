@@ -16,29 +16,6 @@ body{
 
 main{
     padding-top: 120px;
-    div{
-        img{
-            &:hover{
-                transform: scale(1.1,1.1);
-                transition: 2s;
-                cursor: pointer;
-            }
-        }
-    }   
-    div{
-        div{
-            div{
-                img{
-                    &:hover{
-                        transform: scale(1.05,1.05);
-                        transition: 2s;
-                        cursor: pointer;
-                        
-                    }
-                }
-            }
-        }
-    }
     form{
         fieldset{
             label{
@@ -69,6 +46,13 @@ h1,h2{
 h3,h4{
     padding-left: 20px;
     font-size: $textoChico;
+}
+
+.nav-item2{
+    padding: 2vh;
+    &:hover{
+        background-color: rgba(255, 255, 255, 0.01);
+    }
 }
 
 .seccion{
@@ -137,16 +121,7 @@ h3,h4{
 .div__tamaño--80{
     width: 80%;
 }
-/*
-.brillo {
-    background-color: white;
-    display: inline-block;
 
-}
-.brillo img:hover {
-    opacity: .9;
-}
-*/
 @keyframes opacity{
     from{opacity:0;}
     to{opacity:1;}
@@ -166,6 +141,27 @@ h3,h4{
 
 @for $i from 0 through 3{
     .div__animacion--#{1s+($duracion*$i)} {animation-duration: 1s+($duracion*$i);}
+}
+
+@for $i from 0 through 2{
+    .div__transicion--#{1s+($duracion*$i)} {transition: 1s+($duracion*$i);}
+}
+
+@for $i from 1 through 2{
+    .animacionImagenes--#{$i}:hover {
+        transform: scale(($i/10)+0.95,($i/10)+0.95);
+        cursor: pointer;}
+}
+
+.brillo{
+    filter: brightness(0.75);
+    &:hover{
+        filter: brightness(1);
+    }
+}
+
+#imgshome{
+    justify-content: space-around;
 }
 
 #logo{
@@ -235,53 +231,14 @@ h3,h4{
     padding-top: 15px;
 }
 
-@media only screen and (min-width: 0px) {
-    .h{
-        height: 100%;
-    }
+#botonenviar{
+    text-decoration: none;
+    color:white;
+    background-color:rgb(36, 34, 36);
+    padding: 3px;
+    border: 1px solid white;
 }
 
-@media only screen and (min-width: 992px) {
-    .h{
-        height: ($alturaPrimerFila)-60px;
-    }
-}
-
-@media only screen and (min-width: 992px) {
-    .h{
-        height: ($alturaPrimerFila)-50px;
-    }
-}
-
-@media only screen and (min-width: 1100px) {
-    .h{
-        height: ($alturaPrimerFila)-40px;
-    }
-}
-
-@media only screen and (min-width: 1200px) {
-    .h{
-        height: ($alturaPrimerFila)-30px;
-    }
-}
-
-@media only screen and (min-width: 1300px) {
-    .h{
-        height: ($alturaPrimerFila)-20px;
-    }
-}
-
-@media only screen and (min-width: 1400px) {
-    .h{
-        height: ($alturaPrimerFila)-10px;
-    }
-}
-
-@media only screen and (min-width: 1500px) {
-    .h{
-        height: $alturaPrimerFila;
-    }
-}
 
 
 
